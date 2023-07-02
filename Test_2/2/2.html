@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Form</title>
+  <style>
+    form{
+        border: 2px solid black;
+        line-height: 40px;
+        padding:50px;
+        font-size: 25px;
+        width:50%;
+        margin: auto;
+    }
+  </style>
+</head>
+<body>
+  <h1 style="text-align: center;">Registration Form</h1>
+  <form>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+<br>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+<br>
+    <label for="phone">Phone Number:</label>
+    <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required>
+    <span style="color:rgb(179, 4, 4);font-size: 15px;">*Enter a 10-digit phone number</span>
+<br>
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required>
+<br>
+    <label for="age">Age:</label>
+    <input type="number" id="age" name="age" min="18" max="100" required>
+<br>
+    <label for="gender">Gender:</label>
+    <select id="gender" name="gender" required>
+      <option value="">Select</option>
+      <option value="male">Male</option>
+      <option value="female">Female</option>
+      <option value="other">Other</option>
+    </select>
+<br>
+    <label for="date">Date:</label>
+    <input type="date" id="date" name="date" required>
+<br>
+    <label for="color">Color:</label>
+    <input type="color" id="color" name="color" required>
+<br>
+    <input type="submit" value="Submit">
+  </form>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing:content-box;
+        }
+        .grid-container{
+            display: grid;
+            grid-template-columns: repeat(6,120px);
+            grid-template-rows: repeat(6,120px);
+            gap: 20px;
+            width:70%;
+            margin: auto;
+        }
+
+        img{
+            width:100%;
+            height: 200px;
+        }
+        #one {
+            grid-row: 1/4;
+            grid-column: 1/3;
+            background-image: url('./img1.jpg');
+            background-size: cover;
+        }
+        #two {
+            grid-row: 1/4;
+            grid-column: 3/5; 
+            background-image: url('./img2.jpg');
+            background-size: cover;
+        }
+        #three {
+            grid-row: 4/7;
+            grid-column: 1/5; 
+            background-image: url('./img3.jpg');
+            background-size: cover;
+        }
+        #four {
+            grid-row: 1/3;
+            grid-column: 5/7; 
+            background-image: url('./img4.jpg');
+            background-size: cover;
+        }
+        #five{
+            grid-row: 3/5;
+            grid-column: 5/7; 
+            background-image: url('./img5.jpg');
+            background-size: cover;
+        }
+        #six {
+            grid-row: 5/7;
+            grid-column: 5/7; 
+            background-image: url('./img6.jpg');
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+       
+        <div id="one"></div>
+        <div id="two"><img src="./img2.jpg" alt="1"></div>
+        <div id="three"><img src="./img3.jpg" alt="1"></div>
+        <div id="four"><img src="./img4.jpg" alt="1"></div>
+        <div id="five"><img src="./img5.jpg" alt="1"></div>
+        <div id="six"><img src="./img6.jpg" alt="1"></div>
+        
+      
+    </div>
+</body>
+</html>
